@@ -1,43 +1,29 @@
 #pragma once
 #include <asynPortDriver.h>
 #include <devLib.h>
+#include <epicsEvent.h>
 #include <epicsMMIO.h>
 #include <stdint.h>
-
-// #warning "vxWorks dependent for testing"
-// #include <vxWorks.h>
-// #include <vme.h>
-// #include <vxLib.h>
-
-// String names for asyn parameters
-#define ACQUISITION_MODE_STR "ACQUISITION_MODE"
-#define EDGE_DETECT_MODE_STR "EDGE_DETECT_MODE"
-#define ENABLE_PATTERN_STR "ENABLE_PATTERN"
-#define WINDOW_WIDTH_STR "WINDOW_WIDTH"
-#define WINDOW_OFFSET_STR "WINDOW_OFFSET"
-#define SOFTWARE_CLEAR_STR "SOFTWARE_CLEAR"
-#define SOFTWARE_TRIGGER_STR "SOFTWARE_TRIGGER"
-#define TDC_HEADER_TRAILER_STR "TDC_HEADER_TRAILER"
-#define STATUS_STR "STATUS"
-#define CONTROL_STR "CONTROL"
-#define TESTREG_STR "TESTREG"
-#define DUMMY32_STR "DUMMY32"
-#define DUMMY16_STR "DUMMY16"
-#define EVENTS_STORED_STR "EVENTS_STORED"
-#define DEV_PARAM_STR "DEV_PARAM"
 
 class CaenV1290N : public asynPortDriver {
   public:
     CaenV1290N(const char* portName, int baseAddress);
     virtual void poll();
+    virtual void acquisition_worker();
     virtual asynStatus writeInt32(asynUser* pasynUser, epicsInt32 value);
     virtual asynStatus readInt32(asynUser* pasynUser, epicsInt32* value);
+    virtual asynStatus readInt32Array(asynUser* pasynUser, epicsInt32* value,
+                                      size_t nElements, size_t* nIn);
     virtual asynStatus readUInt32Digital(asynUser* pasynUser, epicsUInt32* value, epicsUInt32 mask);
     virtual asynStatus writeUInt32Digital(asynUser* pasynUser, epicsUInt32 value, epicsUInt32 mask);
 
   private:
+    static const size_t CAPTURE_SIZE = 4096;
+
     // this is a "trick" since adding an offset like 0x1000 to a pointer to uint8_t moves 4 bytes
     volatile uint8_t* base;
+    epicsEventId acquire_event_;
+    epicsInt32 capture_buffer_[CAPTURE_SIZE];
 
     /// \brief Continually tests microcontroller handshake until true, or timeout.
     ///
@@ -131,4 +117,7 @@ class CaenV1290N : public asynPortDriver {
     int dummy16Id_;
     int dummy32Id_;
     int devParamId_;
+    int acquireId_;
+    int numCapturedId_;
+    int rawDataId_;
 };
