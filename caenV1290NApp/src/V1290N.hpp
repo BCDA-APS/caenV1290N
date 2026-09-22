@@ -85,5 +85,9 @@ static const uint16_t WriteEnablePattern = 0x4400;
 static const uint16_t ReadEnablePattern = 0x4500;
 static const uint16_t SetWindowWidth = 0x1000;
 static const uint16_t SetWindowOffset = 0x1100;
+static const uint16_t ExtraSearchMargin = 0x1200;
+static const uint16_t RejectMargin = 0x1300;
+static const uint16_t EnableSubtractTrigger = 0x1400;
+static const uint16_t DisableSubtractTrigger = 0x1500;
 static const uint16_t ReadTriggerConfig = 0x1600;
 } // namespace Opcode

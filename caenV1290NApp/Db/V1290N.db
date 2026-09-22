@@ -66,6 +66,12 @@ record(mbbiDirect, "$(P)$(R):EnableBitsRBV") {
     field(INP,  "@asynMask($(PORT),$(ADDR=0),0xFFFF,1)ENABLE_PATTERN")
 }
 
+record(bo, "$(P)$(R):ReadTriggerConfig") {
+    field(DTYP, "asynInt32")
+    field(PINI, "YES")
+    field(OUT, "@asyn($(PORT),$(ADDR=0))TRIGGER_CONFIG")
+}
+
 record(longout, "$(P)$(R):WindowWidth") {
     field(DTYP, "asynInt32")
     field(EGU, "25 ns")
@@ -74,6 +80,13 @@ record(longout, "$(P)$(R):WindowWidth") {
     field(OUT, "@asyn($(PORT),$(ADDR=0))WINDOW_WIDTH")
     field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
 }
+record(longin, "$(P)$(R):WindowWidthRBV") {
+    field(DTYP, "asynInt32")
+    field(EGU, "25 ns")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn($(PORT),$(ADDR=0))WINDOW_WIDTH")
+}
+
 record(longout, "$(P)$(R):WindowOffset") {
     field(DTYP, "asynInt32")
     field(EGU, "25 ns")
@@ -82,33 +95,44 @@ record(longout, "$(P)$(R):WindowOffset") {
     field(OUT, "@asyn($(PORT),$(ADDR=0))WINDOW_OFFSET")
     field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
 }
-
-record(bo, "$(P)$(R):ReadTriggerConfig") {
-    field(DTYP, "asynInt32")
-    field(OUT, "@asyn($(PORT),$(ADDR=0))TRIGGER_CONFIG")
-}
-
-record(longin, "$(P)$(R):WindowWidthRBV") {
-    field(DTYP, "asynInt32")
-    field(EGU, "25 ns")
-    field(SCAN, "I/O Intr")
-    field(INP, "@asyn($(PORT),$(ADDR=0))WINDOW_WIDTH")
-}
 record(longin, "$(P)$(R):WindowOffsetRBV") {
     field(DTYP, "asynInt32")
     field(EGU, "25 ns")
     field(SCAN, "I/O Intr")
     field(INP, "@asyn($(PORT),$(ADDR=0))WINDOW_OFFSET")
 }
-record(longin, "$(P)$(R):ExtraSearchWindowRBV") {
+
+record(longout, "$(P)$(R):ExtraSearchMargin") {
+    field(DTYP, "asynInt32")
+    field(EGU, "Cylces")
+    field(OUT, "@asyn($(PORT),$(ADDR=0))EXTRA_SEARCH")
+    field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
+}
+record(longin, "$(P)$(R):ExtraSearchMarginRBV") {
     field(DTYP, "asynInt32")
     field(SCAN, "I/O Intr")
     field(INP, "@asyn($(PORT),$(ADDR=0))EXTRA_SEARCH")
+}
+
+record(longout, "$(P)$(R):RejectMargin") {
+    field(DTYP, "asynInt32")
+    field(EGU, "Cylces")
+    field(DRVL, 0)
+    field(OUT, "@asyn($(PORT),$(ADDR=0))REJECT_MARGIN")
+    field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
 }
 record(longin, "$(P)$(R):RejectMarginRBV") {
     field(DTYP, "asynInt32")
     field(SCAN, "I/O Intr")
     field(INP, "@asyn($(PORT),$(ADDR=0))REJECT_MARGIN")
+}
+
+record(bo, "$(P)$(R):TriggerTimeSub") {
+    field(DTYP, "asynInt32")
+    field(ZNAM, "Disabled")
+    field(ONAM, "Enabled")
+    field(OUT, "@asyn($(PORT),$(ADDR=0))TRIGGER_TIME_SUB")
+    field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
 }
 record(bi, "$(P)$(R):TriggerTimeSubRBV") {
     field(DTYP, "asynInt32")

@@ -257,7 +257,20 @@ asynStatus CaenV1290N::writeInt32(asynUser* pasynUser, epicsInt32 value) {
         if (!write_micro(value == 0 ? Opcode::DisableTDCHeaderTrailer : Opcode::EnableTDCHeaderTrailer)) {
             asyn_status = asynError;
         }
-    } else if (function == softwareClearId_) {
+    } else if (function == extraSearchId_) {
+        if (!write_micro(Opcode::ExtraSearchMargin, value)) {
+            asyn_status = asynError;
+        }
+    } else if (function == rejectMarginId_) {
+        if (!write_micro(Opcode::RejectMargin, value)) {
+            asyn_status = asynError;
+        }
+    } else if (function == triggerTimeSubId_) {
+        if (!write_micro(value == 0 ? Opcode::DisableSubtractTrigger : Opcode::EnableSubtractTrigger)) {
+            asyn_status = asynError;
+        }
+    }
+    else if (function == softwareClearId_) {
         writeD16(Register::SwClear, value);
     } else if (function == softwareTriggerId_) {
         writeD16(Register::SwTrigger, value);

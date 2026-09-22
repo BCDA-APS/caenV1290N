@@ -5,10 +5,10 @@ file {
 }
 display {
 	object {
-		x=4746
-		y=626
-		width=1102
-		height=914
+		x=4890
+		y=631
+		width=1012
+		height=847
 	}
 	clr=14
 	bclr=4
@@ -91,7 +91,7 @@ rectangle {
 	object {
 		x=0
 		y=0
-		width=1000
+		width=1100
 		height=30
 	}
 	"basic attribute" {
@@ -194,8 +194,8 @@ text {
 }
 byte {
 	object {
-		x=190
-		y=390
+		x=195
+		y=465
 		width=25
 		height=320
 	}
@@ -210,8 +210,8 @@ byte {
 }
 "message button" {
 	object {
-		x=120
-		y=360
+		x=125
+		y=435
 		width=100
 		height=20
 	}
@@ -225,8 +225,8 @@ byte {
 }
 "message button" {
 	object {
-		x=10
-		y=360
+		x=15
+		y=435
 		width=100
 		height=20
 	}
@@ -240,8 +240,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=390
+		x=120
+		y=465
 		width=75
 		height=20
 	}
@@ -255,8 +255,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=390
+		x=45
+		y=465
 		width=75
 		height=20
 	}
@@ -270,8 +270,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=410
+		x=120
+		y=485
 		width=75
 		height=20
 	}
@@ -285,8 +285,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=410
+		x=45
+		y=485
 		width=75
 		height=20
 	}
@@ -300,8 +300,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=430
+		x=120
+		y=505
 		width=75
 		height=20
 	}
@@ -315,8 +315,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=430
+		x=45
+		y=505
 		width=75
 		height=20
 	}
@@ -330,8 +330,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=450
+		x=120
+		y=525
 		width=75
 		height=20
 	}
@@ -345,8 +345,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=450
+		x=45
+		y=525
 		width=75
 		height=20
 	}
@@ -360,8 +360,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=470
+		x=120
+		y=545
 		width=75
 		height=20
 	}
@@ -375,8 +375,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=470
+		x=45
+		y=545
 		width=75
 		height=20
 	}
@@ -390,8 +390,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=490
+		x=120
+		y=565
 		width=75
 		height=20
 	}
@@ -405,8 +405,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=490
+		x=45
+		y=565
 		width=75
 		height=20
 	}
@@ -420,8 +420,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=510
+		x=120
+		y=585
 		width=75
 		height=20
 	}
@@ -435,8 +435,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=510
+		x=45
+		y=585
 		width=75
 		height=20
 	}
@@ -450,8 +450,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=530
+		x=120
+		y=605
 		width=75
 		height=20
 	}
@@ -465,8 +465,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=530
+		x=45
+		y=605
 		width=75
 		height=20
 	}
@@ -480,8 +480,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=550
+		x=120
+		y=625
 		width=75
 		height=20
 	}
@@ -495,8 +495,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=550
+		x=45
+		y=625
 		width=75
 		height=20
 	}
@@ -510,8 +510,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=570
+		x=120
+		y=645
 		width=75
 		height=20
 	}
@@ -525,8 +525,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=570
+		x=45
+		y=645
 		width=75
 		height=20
 	}
@@ -540,8 +540,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=590
+		x=120
+		y=665
 		width=75
 		height=20
 	}
@@ -555,8 +555,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=590
+		x=45
+		y=665
 		width=75
 		height=20
 	}
@@ -570,8 +570,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=610
+		x=120
+		y=685
 		width=75
 		height=20
 	}
@@ -585,8 +585,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=610
+		x=45
+		y=685
 		width=75
 		height=20
 	}
@@ -600,8 +600,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=630
+		x=120
+		y=705
 		width=75
 		height=20
 	}
@@ -615,8 +615,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=630
+		x=45
+		y=705
 		width=75
 		height=20
 	}
@@ -630,8 +630,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=650
+		x=120
+		y=725
 		width=75
 		height=20
 	}
@@ -645,8 +645,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=650
+		x=45
+		y=725
 		width=75
 		height=20
 	}
@@ -660,8 +660,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=670
+		x=120
+		y=745
 		width=75
 		height=20
 	}
@@ -675,8 +675,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=670
+		x=45
+		y=745
 		width=75
 		height=20
 	}
@@ -690,8 +690,8 @@ byte {
 }
 "message button" {
 	object {
-		x=115
-		y=690
+		x=120
+		y=765
 		width=75
 		height=20
 	}
@@ -705,8 +705,8 @@ byte {
 }
 "message button" {
 	object {
-		x=40
-		y=690
+		x=45
+		y=765
 		width=75
 		height=20
 	}
@@ -720,8 +720,8 @@ byte {
 }
 text {
 	object {
-		x=5
-		y=390
+		x=10
+		y=465
 		width=30
 		height=20
 	}
@@ -733,8 +733,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=410
+		x=10
+		y=485
 		width=30
 		height=20
 	}
@@ -746,8 +746,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=430
+		x=10
+		y=505
 		width=30
 		height=20
 	}
@@ -759,8 +759,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=450
+		x=10
+		y=525
 		width=30
 		height=20
 	}
@@ -772,8 +772,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=470
+		x=10
+		y=545
 		width=30
 		height=20
 	}
@@ -785,8 +785,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=490
+		x=10
+		y=565
 		width=30
 		height=20
 	}
@@ -798,8 +798,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=510
+		x=10
+		y=585
 		width=30
 		height=20
 	}
@@ -811,8 +811,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=530
+		x=10
+		y=605
 		width=30
 		height=20
 	}
@@ -824,8 +824,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=550
+		x=10
+		y=625
 		width=30
 		height=20
 	}
@@ -837,8 +837,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=570
+		x=10
+		y=645
 		width=30
 		height=20
 	}
@@ -850,8 +850,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=590
+		x=10
+		y=665
 		width=30
 		height=20
 	}
@@ -863,8 +863,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=610
+		x=10
+		y=685
 		width=30
 		height=20
 	}
@@ -876,8 +876,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=630
+		x=10
+		y=705
 		width=30
 		height=20
 	}
@@ -889,8 +889,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=650
+		x=10
+		y=725
 		width=30
 		height=20
 	}
@@ -902,8 +902,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=670
+		x=10
+		y=745
 		width=30
 		height=20
 	}
@@ -915,8 +915,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=690
+		x=10
+		y=765
 		width=30
 		height=20
 	}
@@ -928,8 +928,8 @@ text {
 }
 text {
 	object {
-		x=5
-		y=330
+		x=10
+		y=405
 		width=120
 		height=25
 	}
@@ -940,7 +940,7 @@ text {
 }
 "text entry" {
 	object {
-		x=220
+		x=610
 		y=190
 		width=75
 		height=20
@@ -955,7 +955,7 @@ text {
 }
 "text entry" {
 	object {
-		x=220
+		x=610
 		y=230
 		width=75
 		height=20
@@ -970,7 +970,7 @@ text {
 }
 text {
 	object {
-		x=40
+		x=430
 		y=190
 		width=175
 		height=20
@@ -983,7 +983,7 @@ text {
 }
 text {
 	object {
-		x=40
+		x=430
 		y=230
 		width=175
 		height=20
@@ -996,8 +996,8 @@ text {
 }
 byte {
 	object {
-		x=475
-		y=400
+		x=480
+		y=475
 		width=25
 		height=320
 	}
@@ -1012,8 +1012,8 @@ byte {
 }
 "message button" {
 	object {
-		x=410
-		y=265
+		x=15
+		y=145
 		width=120
 		height=20
 	}
@@ -1025,25 +1025,10 @@ byte {
 	label="Software Clear"
 	release_msg="1"
 }
-"message button" {
-	object {
-		x=970
-		y=735
-		width=120
-		height=20
-	}
-	control {
-		chan="$(P)V1290N:test.PROC"
-		clr=14
-		bclr=51
-	}
-	label="dev test"
-	release_msg="1"
-}
 text {
 	object {
-		x=400
-		y=375
+		x=405
+		y=450
 		width=100
 		height=20
 	}
@@ -1055,8 +1040,8 @@ text {
 }
 byte {
 	object {
-		x=774
-		y=400
+		x=779
+		y=475
 		width=25
 		height=320
 	}
@@ -1071,8 +1056,8 @@ byte {
 }
 text {
 	object {
-		x=699
-		y=375
+		x=704
+		y=450
 		width=100
 		height=20
 	}
@@ -1084,37 +1069,8 @@ text {
 }
 text {
 	object {
-		x=885
-		y=885
-		width=100
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="TestReg:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=990
-		y=885
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)V1290N:TestRegister.VAL"
-		clr=14
-		bclr=51
-	}
-	format="hexadecimal"
-	limits {
-	}
-}
-text {
-	object {
-		x=669
-		y=400
+		x=674
+		y=475
 		width=100
 		height=20
 	}
@@ -1126,8 +1082,8 @@ text {
 }
 text {
 	object {
-		x=669
-		y=420
+		x=674
+		y=495
 		width=100
 		height=20
 	}
@@ -1139,8 +1095,8 @@ text {
 }
 text {
 	object {
-		x=669
-		y=440
+		x=674
+		y=515
 		width=100
 		height=20
 	}
@@ -1152,8 +1108,8 @@ text {
 }
 text {
 	object {
-		x=619
-		y=460
+		x=624
+		y=535
 		width=150
 		height=20
 	}
@@ -1165,8 +1121,8 @@ text {
 }
 text {
 	object {
-		x=669
-		y=480
+		x=674
+		y=555
 		width=100
 		height=20
 	}
@@ -1178,8 +1134,8 @@ text {
 }
 text {
 	object {
-		x=619
-		y=500
+		x=624
+		y=575
 		width=150
 		height=20
 	}
@@ -1191,8 +1147,8 @@ text {
 }
 text {
 	object {
-		x=569
-		y=520
+		x=574
+		y=595
 		width=200
 		height=20
 	}
@@ -1204,8 +1160,8 @@ text {
 }
 text {
 	object {
-		x=518
-		y=540
+		x=523
+		y=615
 		width=250
 		height=20
 	}
@@ -1217,8 +1173,8 @@ text {
 }
 text {
 	object {
-		x=569
-		y=560
+		x=574
+		y=635
 		width=200
 		height=20
 	}
@@ -1230,8 +1186,8 @@ text {
 }
 text {
 	object {
-		x=519
-		y=580
+		x=524
+		y=655
 		width=250
 		height=20
 	}
@@ -1243,8 +1199,8 @@ text {
 }
 text {
 	object {
-		x=519
-		y=640
+		x=524
+		y=715
 		width=250
 		height=20
 	}
@@ -1256,8 +1212,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=400
+		x=275
+		y=475
 		width=200
 		height=20
 	}
@@ -1269,8 +1225,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=420
+		x=275
+		y=495
 		width=200
 		height=20
 	}
@@ -1282,8 +1238,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=440
+		x=275
+		y=515
 		width=200
 		height=20
 	}
@@ -1295,8 +1251,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=460
+		x=275
+		y=535
 		width=200
 		height=20
 	}
@@ -1308,8 +1264,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=480
+		x=275
+		y=555
 		width=200
 		height=20
 	}
@@ -1321,8 +1277,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=500
+		x=275
+		y=575
 		width=200
 		height=20
 	}
@@ -1334,8 +1290,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=520
+		x=275
+		y=595
 		width=200
 		height=20
 	}
@@ -1347,8 +1303,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=540
+		x=275
+		y=615
 		width=200
 		height=20
 	}
@@ -1360,8 +1316,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=560
+		x=275
+		y=635
 		width=200
 		height=20
 	}
@@ -1373,8 +1329,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=580
+		x=275
+		y=655
 		width=200
 		height=20
 	}
@@ -1386,8 +1342,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=600
+		x=275
+		y=675
 		width=200
 		height=20
 	}
@@ -1399,8 +1355,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=620
+		x=275
+		y=695
 		width=200
 		height=20
 	}
@@ -1412,8 +1368,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=640
+		x=275
+		y=715
 		width=200
 		height=20
 	}
@@ -1425,8 +1381,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=660
+		x=275
+		y=735
 		width=200
 		height=20
 	}
@@ -1438,8 +1394,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=680
+		x=275
+		y=755
 		width=200
 		height=20
 	}
@@ -1451,8 +1407,8 @@ text {
 }
 text {
 	object {
-		x=270
-		y=700
+		x=275
+		y=775
 		width=200
 		height=20
 	}
@@ -1462,116 +1418,10 @@ text {
 	textix="TRIGGER_LOST:"
 	align="horiz. right"
 }
-"text update" {
-	object {
-		x=990
-		y=865
-		width=100
-		height=15
-	}
-	monitor {
-		chan="$(P)V1290N:TestRegisterRBV.VAL"
-		clr=54
-		bclr=4
-	}
-	format="hexadecimal"
-	limits {
-	}
-}
-text {
-	object {
-		x=880
-		y=780
-		width=100
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Dummy16:"
-	align="horiz. right"
-}
-"text entry" {
-	object {
-		x=990
-		y=780
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)V1290N:Dummy16.VAL"
-		clr=14
-		bclr=51
-	}
-	format="hexadecimal"
-	limits {
-	}
-}
-"text update" {
-	object {
-		x=990
-		y=760
-		width=100
-		height=15
-	}
-	monitor {
-		chan="$(P)V1290N:Dummy16RBV.VAL"
-		clr=54
-		bclr=4
-	}
-	format="hexadecimal"
-	limits {
-	}
-}
-"text entry" {
-	object {
-		x=990
-		y=835
-		width=100
-		height=20
-	}
-	control {
-		chan="$(P)V1290N:Dummy32.VAL"
-		clr=14
-		bclr=51
-	}
-	format="hexadecimal"
-	limits {
-	}
-}
-text {
-	object {
-		x=880
-		y=835
-		width=100
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	textix="Dummy32:"
-	align="horiz. right"
-}
-"text update" {
-	object {
-		x=990
-		y=815
-		width=100
-		height=15
-	}
-	monitor {
-		chan="$(P)V1290N:Dummy32RBV.VAL"
-		clr=54
-		bclr=4
-	}
-	format="hexadecimal"
-	limits {
-	}
-}
 "message button" {
 	object {
-		x=540
-		y=265
+		x=15
+		y=170
 		width=120
 		height=20
 	}
@@ -1585,8 +1435,8 @@ text {
 }
 "text update" {
 	object {
-		x=570
-		y=310
+		x=405
+		y=810
 		width=100
 		height=20
 	}
@@ -1600,8 +1450,8 @@ text {
 }
 text {
 	object {
-		x=410
-		y=310
+		x=245
+		y=810
 		width=150
 		height=20
 	}
@@ -1654,8 +1504,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=400
+		x=825
+		y=475
 		width=20
 		height=20
 	}
@@ -1669,8 +1519,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=400
+		x=805
+		y=475
 		width=20
 		height=20
 	}
@@ -1684,8 +1534,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=420
+		x=825
+		y=495
 		width=20
 		height=20
 	}
@@ -1699,8 +1549,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=420
+		x=805
+		y=495
 		width=20
 		height=20
 	}
@@ -1714,8 +1564,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=440
+		x=825
+		y=515
 		width=20
 		height=20
 	}
@@ -1729,8 +1579,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=440
+		x=805
+		y=515
 		width=20
 		height=20
 	}
@@ -1744,8 +1594,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=460
+		x=825
+		y=535
 		width=20
 		height=20
 	}
@@ -1759,8 +1609,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=460
+		x=805
+		y=535
 		width=20
 		height=20
 	}
@@ -1774,8 +1624,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=480
+		x=805
+		y=555
 		width=20
 		height=20
 	}
@@ -1789,8 +1639,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=480
+		x=825
+		y=555
 		width=20
 		height=20
 	}
@@ -1804,8 +1654,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=500
+		x=805
+		y=575
 		width=20
 		height=20
 	}
@@ -1819,8 +1669,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=500
+		x=825
+		y=575
 		width=20
 		height=20
 	}
@@ -1834,8 +1684,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=520
+		x=805
+		y=595
 		width=20
 		height=20
 	}
@@ -1849,8 +1699,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=520
+		x=825
+		y=595
 		width=20
 		height=20
 	}
@@ -1864,8 +1714,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=540
+		x=805
+		y=615
 		width=20
 		height=20
 	}
@@ -1879,8 +1729,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=540
+		x=825
+		y=615
 		width=20
 		height=20
 	}
@@ -1894,8 +1744,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=560
+		x=805
+		y=635
 		width=20
 		height=20
 	}
@@ -1909,8 +1759,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=560
+		x=825
+		y=635
 		width=20
 		height=20
 	}
@@ -1924,8 +1774,8 @@ menu {
 }
 "message button" {
 	object {
-		x=800
-		y=640
+		x=805
+		y=715
 		width=20
 		height=20
 	}
@@ -1939,8 +1789,8 @@ menu {
 }
 "message button" {
 	object {
-		x=820
-		y=640
+		x=825
+		y=715
 		width=20
 		height=20
 	}
@@ -2014,7 +1864,7 @@ menu {
 }
 "text update" {
 	object {
-		x=220
+		x=610
 		y=175
 		width=75
 		height=15
@@ -2030,7 +1880,7 @@ menu {
 }
 "text update" {
 	object {
-		x=220
+		x=610
 		y=215
 		width=75
 		height=15
@@ -2046,25 +1896,173 @@ menu {
 }
 text {
 	object {
-		x=10
+		x=425
 		y=145
-		width=175
+		width=275
 		height=20
 	}
 	"basic attribute" {
 		clr=14
 	}
 	textix="Trigger Matching"
+	align="horiz. centered"
 }
 rectangle {
 	object {
-		x=5
-		y=140
-		width=330
-		height=130
+		x=425
+		y=135
+		width=275
+		height=250
 	}
 	"basic attribute" {
 		clr=14
 		fill="outline"
+		width=2
+	}
+}
+text {
+	object {
+		x=430
+		y=270
+		width=175
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Extra Search:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=610
+		y=270
+		width=75
+		height=20
+	}
+	control {
+		chan="$(P)V1290N:ExtraSearchMargin.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=610
+		y=255
+		width=75
+		height=15
+	}
+	monitor {
+		chan="$(P)V1290N:ExtraSearchMarginRBV.VAL"
+		clr=54
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=430
+		y=310
+		width=175
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Reject Margin:"
+	align="horiz. right"
+}
+"text entry" {
+	object {
+		x=610
+		y=310
+		width=75
+		height=20
+	}
+	control {
+		chan="$(P)V1290N:RejectMargin.VAL"
+		clr=14
+		bclr=51
+	}
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=610
+		y=295
+		width=75
+		height=15
+	}
+	monitor {
+		chan="$(P)V1290N:RejectMarginRBV.VAL"
+		clr=54
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+menu {
+	object {
+		x=610
+		y=350
+		width=75
+		height=20
+	}
+	control {
+		chan="$(P)V1290N:TriggerTimeSub.VAL"
+		clr=14
+		bclr=51
+	}
+}
+text {
+	object {
+		x=430
+		y=350
+		width=175
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Subtract Trigger:"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=610
+		y=335
+		width=75
+		height=15
+	}
+	monitor {
+		chan="$(P)V1290N:TriggerTimeSubRBV.VAL"
+		clr=54
+		bclr=4
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+polyline {
+	object {
+		x=450
+		y=165
+		width=222
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(451,166)
+		(671,166)
 	}
 }
