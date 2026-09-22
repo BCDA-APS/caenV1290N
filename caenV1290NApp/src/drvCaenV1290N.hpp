@@ -107,6 +107,10 @@ class CaenV1290N : public asynPortDriver {
     int enablePatternId_;
     int windowWidthId_;
     int windowOffsetId_;
+    int extraSearchId_;
+    int rejectMarginId_;
+    int triggerTimeSubId_;
+    int triggerConfigId_;
     int softwareClearId_;
     int softwareTriggerId_;
     int tdcHeaderTrailerId_;

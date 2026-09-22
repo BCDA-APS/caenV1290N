@@ -52,6 +52,12 @@ CaenV1290N::CaenV1290N(const char* portName, int baseAddress)
     createParam("EVENTS_STORED", asynParamInt32, &eventsStoredId_);
     createParam("WINDOW_WIDTH", asynParamInt32, &windowWidthId_);
     createParam("WINDOW_OFFSET", asynParamInt32, &windowOffsetId_);
+
+    createParam("TRIGGER_CONFIG", asynParamInt32, &triggerConfigId_);
+    createParam("EXTRA_SEARCH", asynParamInt32, &extraSearchId_);
+    createParam("REJECT_MARGIN", asynParamInt32, &rejectMarginId_);
+    createParam("TRIGGER_TIME_SUB", asynParamInt32, &triggerTimeSubId_);
+
     createParam("SOFTWARE_CLEAR", asynParamInt32, &softwareClearId_);
     createParam("SOFTWARE_TRIGGER", asynParamInt32, &softwareTriggerId_);
     createParam("TDC_HEADER_TRAILER", asynParamInt32, &tdcHeaderTrailerId_);
@@ -271,6 +277,34 @@ asynStatus CaenV1290N::writeInt32(asynUser* pasynUser, epicsInt32 value) {
             epicsEventSignal(acquire_event_);
         }
         callParamCallbacks();
+    } else if (function == triggerConfigId_) {
+        if (!wait_micro_handshake(Handshake::WriteOk)) {
+            return asynError;
+        }
+        writeD16(Register::Micro, Opcode::ReadTriggerConfig);
+        uint16_t v;
+        for (size_t i = 0; i < 5; i++) {
+            if (!wait_micro_handshake(Handshake::ReadOk)) {
+                return asynError;
+            }
+            readD16(Register::Micro, v);
+            if (i == 0) {
+                setIntegerParam(windowWidthId_, v);
+            } else if (i == 1) {
+                int offset = v & 0x0FFF;
+                if (offset & 0x0800) {
+                    offset |= ~0x0FFF;
+                }
+                setIntegerParam(windowOffsetId_, offset);
+            } else if (i == 2) {
+                setIntegerParam(extraSearchId_, v);
+            } else if (i == 3) {
+                setIntegerParam(rejectMarginId_, v);
+            } else if (i == 4) {
+                setIntegerParam(triggerTimeSubId_, v);
+            }
+        }
+        callParamCallbacks();
     }
 
     else if (function == devParamId_) {
@@ -281,10 +315,10 @@ asynStatus CaenV1290N::writeInt32(asynUser* pasynUser, epicsInt32 value) {
     }
 
     if (asyn_status) {
-        asynPrint(pasynUser, ASYN_TRACE_ERROR, "Error in CaenV1290N::readInt32\n");
+        asynPrint(pasynUser, ASYN_TRACE_ERROR, "Error in CaenV1290N::writeInt32\n");
     }
 
-    return asynSuccess;
+    return asyn_status;
 }
 
 void CaenV1290N::acquisition_worker() {

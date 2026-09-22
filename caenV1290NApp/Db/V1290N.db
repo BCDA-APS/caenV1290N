@@ -68,17 +68,54 @@ record(mbbiDirect, "$(P)$(R):EnableBitsRBV") {
 
 record(longout, "$(P)$(R):WindowWidth") {
     field(DTYP, "asynInt32")
-    field(EGU, "1/25 ns")
+    field(EGU, "25 ns")
     field(DRVH, 2088)
     field(DRVL, 1)
-    field(OUT,  "@asyn($(PORT),$(ADDR=0))WINDOW_WIDTH")
+    field(OUT, "@asyn($(PORT),$(ADDR=0))WINDOW_WIDTH")
+    field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
 }
 record(longout, "$(P)$(R):WindowOffset") {
     field(DTYP, "asynInt32")
-    field(EGU, "cycles (25ns)")
+    field(EGU, "25 ns")
     field(DRVH, 40)
     field(DRVL, -2048)
-    field(OUT,  "@asyn($(PORT),$(ADDR=0))WINDOW_OFFSET")
+    field(OUT, "@asyn($(PORT),$(ADDR=0))WINDOW_OFFSET")
+    field(FLNK, "$(P)$(R):ReadTriggerConfig.PROC")
+}
+
+record(bo, "$(P)$(R):ReadTriggerConfig") {
+    field(DTYP, "asynInt32")
+    field(OUT, "@asyn($(PORT),$(ADDR=0))TRIGGER_CONFIG")
+}
+
+record(longin, "$(P)$(R):WindowWidthRBV") {
+    field(DTYP, "asynInt32")
+    field(EGU, "25 ns")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn($(PORT),$(ADDR=0))WINDOW_WIDTH")
+}
+record(longin, "$(P)$(R):WindowOffsetRBV") {
+    field(DTYP, "asynInt32")
+    field(EGU, "25 ns")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn($(PORT),$(ADDR=0))WINDOW_OFFSET")
+}
+record(longin, "$(P)$(R):ExtraSearchWindowRBV") {
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn($(PORT),$(ADDR=0))EXTRA_SEARCH")
+}
+record(longin, "$(P)$(R):RejectMarginRBV") {
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(INP, "@asyn($(PORT),$(ADDR=0))REJECT_MARGIN")
+}
+record(bi, "$(P)$(R):TriggerTimeSubRBV") {
+    field(DTYP, "asynInt32")
+    field(SCAN, "I/O Intr")
+    field(ZNAM, "Disabled")
+    field(ONAM, "Enabled")
+    field(INP, "@asyn($(PORT),$(ADDR=0))TRIGGER_TIME_SUB")
 }
 
 record(mbbiDirect, "$(P)$(R):Status") {
